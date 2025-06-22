@@ -7,7 +7,7 @@ pipeline{
 	stages{
 		stage('CheckOut'){
 			steps{
-				git "https://github.com/Second-Fiddle-VK/Maven-HelloWorld.git"
+				git "https://github.com/Vinayak-Rajput/Maven-HelloWorld.git"
 			}
 		}
 		stage('Build'){
@@ -22,7 +22,7 @@ pipeline{
 		}
 		stage('Run Application'){
 			steps{
-				sh 'java -jar target/Maven-Default-1.0-SNAPSHOT.jar'
+				sh 'java -jar target/Maven-HelloWorld.jar'
 			}
 		}
 	}
